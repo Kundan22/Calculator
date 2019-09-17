@@ -45,11 +45,17 @@ class HomePageState extends State<HomePage> {
   Row buttonsRow1Container() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+     
       children: <Widget>[
-        new FlatButton(child: Text("7", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() { if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "7";}),),
-        new FlatButton(child: Text("8", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() { if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "8";}),),
-        new FlatButton(child: Text("9", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() { if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "9";}),),
-        new FlatButton(child: Text("/", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),color: Color.fromARGB(50, 119, 96, 204),onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "/";}),),
+        new OutlineButton(
+          child: Text("7", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),
+          padding: EdgeInsets.all(20) ,
+        
+          onPressed:()=>setState(() { if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  
+          textControllerInput.text = textControllerInput.text + "7";}),),
+        new OutlineButton(child: Text("8", style: TextStyle(fontSize: 35, color: Colors.blueGrey)) , padding: EdgeInsets.all(20) ,onPressed:()=>setState(() { if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "8";}),),
+        new OutlineButton(child: Text("9", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() { if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "9";}),),
+        new OutlineButton(child: Text("/", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), color: Colors.deepOrange[200],onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "/";}),),
       ],
     );
   }
@@ -58,10 +64,10 @@ class HomePageState extends State<HomePage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        new FlatButton(child: Text("4", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "4";}),),
-        new FlatButton(child: Text("5", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "5";}),),
-        new FlatButton(child: Text("6", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "6";}),),
-        new FlatButton(child: Text("x", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),color: Color.fromARGB(50, 119, 96, 204),onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "*";}),),
+        new OutlineButton(child: Text("4", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "4";}),),
+        new OutlineButton(child: Text("5", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "5";}),),
+        new OutlineButton(child: Text("6", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "6";}),),
+        new OutlineButton(child: Text("x", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), color: Colors.deepOrange[200],onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "*";}),),
       ],
     );
   }
@@ -70,10 +76,10 @@ class HomePageState extends State<HomePage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        new FlatButton(child: Text("1", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "1";}),),
-        new FlatButton(child: Text("2", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "2";}),),
-        new FlatButton(child: Text("3", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "3";}),),
-        new FlatButton(child: Text("-", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),color: Color.fromARGB(50, 119, 96, 204),onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "-";}),),
+        new OutlineButton(child: Text("1", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "1";}),),
+        new OutlineButton(child: Text("2", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "2";}),),
+        new OutlineButton(child: Text("3", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "3";}),),
+        new OutlineButton(child: Text("-", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(20), color: Colors.deepOrange[200],onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "-";}),),
       ],
     );
   }
@@ -82,10 +88,10 @@ class HomePageState extends State<HomePage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        new FlatButton(child: Text(".", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + ".";}),),
-        new FlatButton(child: Text("0", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "0";}),),
-        new FlatButton(child: Icon(Icons.backspace, size: 35, color: Colors.blueGrey), onPressed: (){textControllerInput.text=(textControllerInput.text.length>0)?(textControllerInput.text.substring(0, textControllerInput.text.length-1)):"";},),
-        new FlatButton(child: Text("+", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),color: Color.fromARGB(50, 119, 96, 204),onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "+";}),)
+        new OutlineButton(child: Text(".", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(18), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + ".";}),),
+        new OutlineButton(child: Text("0", style: TextStyle(fontSize: 35, color: Colors.blueGrey)), padding: EdgeInsets.all(18), onPressed:()=>setState(() {if(clearAfterResult==true){textControllerInput.text="";clearAfterResult=false;}  textControllerInput.text = textControllerInput.text + "0";}),),
+        new OutlineButton(child: Icon(Icons.backspace, size: 35, color: Colors.blueGrey), padding: EdgeInsets.all(21), onPressed: (){textControllerInput.text=(textControllerInput.text.length>0)?(textControllerInput.text.substring(0, textControllerInput.text.length-1)):"";},),
+        new OutlineButton(child: Text("+", style: TextStyle(fontSize: 35, color: Colors.blueGrey)),color: Colors.deepOrange[200], padding: EdgeInsets.all(18), onPressed:()=>setState(() {textControllerInput.text = textControllerInput.text + "+";}),)
       ],
     );
   }
@@ -100,11 +106,14 @@ class HomePageState extends State<HomePage> {
           buttonsRow3Container(),
           buttonsRow4Container(),
           new Align(alignment: Alignment.centerRight,
-            child: Padding(padding: EdgeInsets.symmetric(horizontal: 10),
-              child: new FlatButton(
-                child: Text("=", style: TextStyle(fontSize: 35, color: Colors.white)),
-                color: Colors.deepPurple,
+            child: 
+              Padding(padding: EdgeInsets.all(10),
+              child: new OutlineButton(
+                child: Text("=", style: TextStyle(fontSize: 35, color: Colors.red)),
+                color: Colors.deepOrange,
                 shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(20.0)),
+                padding: EdgeInsets.all(30),
+              
                 onPressed:(){
                   //Calculate everything here
                   // Parse expression:
@@ -112,8 +121,15 @@ class HomePageState extends State<HomePage> {
                   // Bind variables:
                   ContextModel cm = new ContextModel();
                   Expression exp = p.parse(textControllerInput.text);
-                  setState(() {
-                    textControllerInput.text=exp.evaluate(EvaluationType.REAL, cm).toString();
+                  setState(() 
+                  {
+                    double _result = exp.evaluate(EvaluationType.REAL, cm);
+                    print(_result);
+                    if(_result.toString().endsWith(".0"))
+                      textControllerInput.text= _result.round().toString(); 
+                      else
+                      textControllerInput.text= _result.toString(); 
+
                     clearAfterResult = true;
                   });
                 }
@@ -150,7 +166,7 @@ class HomePageState extends State<HomePage> {
                           fillColor: Colors.yellow[50],
                           border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.red),
-                          borderRadius: BorderRadius.circular(10.0)
+                          borderRadius: BorderRadius.circular(5.0)
                           ),
                           suffix: IconButton(
                                   icon: Icon(Icons.cancel),
