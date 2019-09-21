@@ -32,7 +32,7 @@ dependencies:
 dev_dependencies:
   #Library homepage https://pub.dartlang.org/packages/flutter_launcher_icons
   #For Icons
-#  flutter_launcher_icons: "^0.7.0"
+  flutter_launcher_icons: "^0.7.0"
   flutter_test:
     sdk: flutter
 
@@ -40,10 +40,10 @@ dev_dependencies:
   #Run the Following command like after changing the icon:
   #flutter packages pub run flutter_launcher_icons:main
   #For Icons
-#  flutter_icons:
-#    image_path: "Graphic Assets/icon.png"
-#    android: true
-#    ios: true
+flutter_icons:
+  image_path: "Graphic Assets/icon.png"
+  android: true
+  ios: true
 
 
 
@@ -59,8 +59,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

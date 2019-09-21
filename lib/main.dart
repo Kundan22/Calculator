@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget{
 
 class _MyAppState extends State<MyApp> {
   //Load the last saved value using SharedPreferences
-  Brightness brightness=Brightness.light;
+  Brightness brightness=Brightness.dark;
   _MyAppState(){
     loadSavedBrightnessValue();
   }
